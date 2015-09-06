@@ -9,10 +9,6 @@ long long a[MAXN];
 long long b[MAXN];
 int nValue;
 
-int max(int a, int b){
-	return a>b?a:b;
-}
-
 void CompletePack(int c, int w){
 	for(int i = c; i <= nValue; i++){
 		a[i] += a[i-c]+(b[i]+b[i-c])/inf;
